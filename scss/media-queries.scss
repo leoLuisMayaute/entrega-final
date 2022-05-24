@@ -1,0 +1,69 @@
+@media screen and (min-width: 768px) {
+    .barra-de-navegacion {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            display: block;
+            width: 7rem;
+        }
+
+        ul {
+            display: flex;
+            padding: 2rem 0;
+            list-style-type: none;
+
+            li {
+                text-align: center;
+                padding-inline: 2em;
+            }
+        }
+    }
+
+    .header-index {
+        .contenedor-text {
+            h1 {
+                    font-size: 10rem;
+                }
+            
+                p {
+                    font-size: 1.2rem;
+                }
+        }
+    }
+    .contenedor-galeria {
+        .contenido {
+            grid-template-areas: 
+            "photo-gallery historia-juego";
+            
+        }
+    }
+
+    //estilos pagina de e-sports
+    .descripcion-equipos {
+        .contenedor-equipo {
+            .split {
+                display: grid;
+                grid-template-areas: 
+                "texto imagen";
+                grid-gap: 2em;
+                .split-text {
+                    grid-area: "texto";
+                }
+                .split-image {
+                    grid-area: "imagen";
+                }
+
+            }
+        }
+    }
+
+    .footer-contenedor {
+        flex-direction: row;
+        justify-content: space-around;
+
+        img {
+            padding-inline: 20px;
+        }
+    }
+}

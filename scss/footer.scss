@@ -1,0 +1,21 @@
+
+
+.footer-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-principal-1;
+    padding: 3rem;
+    width: 100%;
+
+    img {
+        display: block;
+        width: 10rem;
+        padding-block: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

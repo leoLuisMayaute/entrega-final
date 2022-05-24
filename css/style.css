@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #191818;
+  color: white; }
+
+.barra-de-navegacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: black;
+  align-items: center; }
+  .barra-de-navegacion img {
+    display: none;
+    width: 100%; }
+  .barra-de-navegacion ul {
+    padding: 2rem 0;
+    list-style-type: none; }
+    .barra-de-navegacion ul li {
+      text-align: center;
+      padding-block: 1em; }
+      .barra-de-navegacion ul li:hover {
+        transform: scale(1.2); }
+      .barra-de-navegacion ul li a {
+        text-decoration: none;
+        color: white; }
+        .barra-de-navegacion ul li a:hover {
+          color: red; }
+
+.footer-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 3rem;
+  width: 100%; }
+  .footer-contenedor img {
+    display: block;
+    width: 10rem;
+    padding-block: 20px; }
+  .footer-contenedor a {
+    text-decoration: none;
+    color: white; }
+
+@media screen and (min-width: 768px) {
+  .barra-de-navegacion {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .barra-de-navegacion img {
+      display: block;
+      width: 7rem; }
+    .barra-de-navegacion ul {
+      display: flex;
+      padding: 2rem 0;
+      list-style-type: none; }
+      .barra-de-navegacion ul li {
+        text-align: center;
+        padding-inline: 2em; }
+  .header-index .contenedor-text h1 {
+    font-size: 10rem; }
+  .header-index .contenedor-text p {
+    font-size: 1.2rem; }
+  .contenedor-galeria .contenido {
+    grid-template-areas: "photo-gallery historia-juego"; }
+  .descripcion-equipos .contenedor-equipo .split {
+    display: grid;
+    grid-template-areas: "texto imagen";
+    grid-gap: 2em; }
+    .descripcion-equipos .contenedor-equipo .split .split-text {
+      grid-area: "texto"; }
+    .descripcion-equipos .contenedor-equipo .split .split-image {
+      grid-area: "imagen"; }
+  .footer-contenedor {
+    flex-direction: row;
+    justify-content: space-around; }
+    .footer-contenedor img {
+      padding-inline: 20px; } }
+
+.header-fonts {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center; }
+
+.header-index {
+  background-color: #918383;
+  width: 98%;
+  margin: 0 auto;
+  padding-block: 15em;
+  height: 100vh;
+  background-image: url("../img/map-fonfo.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply; }
+  .header-index .contenedor-text {
+    max-width: 1080px;
+    margin: auto; }
+  .header-index h1 {
+    font-size: 5rem;
+    margin-block: 1em; }
+  .header-index p {
+    font-size: 1rem; }
+
+.vid-introduccion {
+  margin: 0 auto;
+  max-width: 1920px; }
+  .vid-introduccion h3 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3em 0; }
+  .vid-introduccion .contenedor-iframe {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50%;
+    position: relative; }
+    .vid-introduccion .contenedor-iframe iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+
+.contenedor-galeria {
+  width: 90%;
+  margin: 0 auto; }
+  .contenedor-galeria h3 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3em 0; }
+  .contenedor-galeria p {
+    text-align: justify;
+    padding-block: 1em; }
+  .contenedor-galeria .contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: "photo-gallery", "historia-juego"; }
+    .contenedor-galeria .contenido .photo-gallery {
+      grid-area: "photo-gallery"; }
+      .contenedor-galeria .contenido .photo-gallery img {
+        display: block;
+        width: 100%;
+        margin-block: 2em; }
+    .contenedor-galeria .contenido .historia-juego {
+      grid-area: "historia-juego";
+      margin: auto 0; }
+
+.descripcion-equipos h2 {
+  text-align: center;
+  font-size: 5rem;
+  padding: 1em 0; }
+
+.descripcion-equipos .contenedor-equipo {
+  width: 80%;
+  max-width: 1500px;
+  margin: auto; }
+  .descripcion-equipos .contenedor-equipo h3 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2em 0; }
+  .descripcion-equipos .contenedor-equipo p {
+    text-align: justify;
+    margin: auto 0;
+    padding: 2em; }
+  .descripcion-equipos .contenedor-equipo img {
+    display: block;
+    width: 100%; }
+  .descripcion-equipos .contenedor-equipo .contenedor-boton {
+    text-align: center; }
+    .descripcion-equipos .contenedor-equipo .contenedor-boton .boton-equipos {
+      margin: 2em 0;
+      padding: 0.8em;
+      border-radius: 0.8rem; }
+      .descripcion-equipos .contenedor-equipo .contenedor-boton .boton-equipos:hover {
+        transform: scale(1.05); }
+      .descripcion-equipos .contenedor-equipo .contenedor-boton .boton-equipos a {
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: red;
+        font-weight: 700; }
+
+.contenedor-the-international {
+  text-align: center; }

@@ -1,0 +1,32 @@
+.barra-de-navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $color-principal-1;
+    align-items: center;
+    img {
+        display: none;
+        width: 100%;
+    }
+
+    ul {
+        padding: 2rem 0;
+        list-style-type: none;
+
+        li {
+            text-align: center;
+            padding-block: 1em;
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}
